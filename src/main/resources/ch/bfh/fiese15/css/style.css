@@ -1,0 +1,26 @@
+#gamePane{
+  -fx-background-image: url('../img/background_wood.jpg');
+  -fx-background-repeat: no-repeat;
+}
+
+#rankedPane{
+  -fx-background-image: url('../img/background_scoreList.jpg');
+  -fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+}
+
+#loadNewGamePane,
+#gameModusPane,
+#playerListPane{
+  -fx-background-image: url('../img/background_orange.jpg');
+  -fx-background-repeat: no-repeat;
+-fx-background-size: cover, auto;
+}
+
+.label{
+  -fx-text-fill: #FFF;
+}
+
+#menuBar .label{
+  -fx-text-fill: #000;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bfh.fiese15.controller.AddComputerPlayerController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #FFF;">
+         <children>
+            <Label text="Computer hinzufügen">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Computer">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="difficulty" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></ChoiceBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButton" text="Abbrechen" />
+                  <Button fx:id="saveComputerPlayerButton" mnemonicParsing="false" onAction="#saveComputerPlayerButton" text="Speichern">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+         </padding>
+      </VBox>
+   </children>
+</Pane>

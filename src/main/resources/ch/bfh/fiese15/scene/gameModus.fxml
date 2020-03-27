@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="gameModusPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.bfh.fiese15.controller.GameModusController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="147.0" prefHeight="543.0" prefWidth="1280.0">
+         <children>
+            <Label text="Wählen Sie den Spielmodi">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="singleplayerModusButton" mnemonicParsing="false" onAction="#singleplayerModusButton" prefHeight="100.0" prefWidth="250.0" text="Einzelspieler">
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="multiplayerModusButton" mnemonicParsing="false" onAction="#multiplayerModusButton" prefHeight="100.0" prefWidth="250.0" text="Mehrspieler">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="rankedButton" mnemonicParsing="false" onAction="#rankedButton" prefHeight="50.0" prefWidth="150.0" text="Rangliste">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="800.0" top="200.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</Pane>
